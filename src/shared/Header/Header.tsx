@@ -2,7 +2,7 @@ import React from "react";
 import GlobalSvgSelector from "../../assets/icons/global/GlobalSvgSelector";
 import s from "./Header.module.scss";
 
-import Select, { NonceProvider } from "react-select";
+import Select from "react-select";
 
 const options = [
   { value: "chocolate", label: "Минск" },

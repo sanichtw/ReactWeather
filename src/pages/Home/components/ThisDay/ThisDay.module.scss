@@ -1,0 +1,57 @@
+@import '../../../../styles/variables.scss';
+
+.this__day {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: $box-shadow;
+    border-radius: 20px;
+    background: $lite-background;
+
+
+}
+
+.top__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+    svg {
+        width: 119px;
+        height: 119px;
+    }
+
+    
+}
+
+.top__block_info {
+    .this__temp {
+        color: $blue;
+        font-size: 96px;
+        font-weight: 500;
+    }
+
+    .this__day_name {
+        color: primary-color;
+        font-weight: 400;
+        font-size: 40px;
+    }
+}
+
+
+.bottom__block {
+
+    .this__time,
+    .this__city {
+        color: $lite-color;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    :not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
