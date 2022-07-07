@@ -16,7 +16,7 @@ const ThisDay = (props: Props) => {
         <GlobalSvgSelector id="sun" />
       </div>
       <div className={s.bottom__block}>
-        <div className={s.this__time}>Время: <span>21:54</span></div>
+        <div className={s.this__time}>Время: <span>16:15</span></div>
         <div className={s.this__city}>Город <span>Минск</span></div>
       </div>
     </div>

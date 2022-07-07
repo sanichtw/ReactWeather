@@ -6,7 +6,7 @@
     width: 100%;
     box-shadow: $box-shadow;
     border-radius: 20px;
-    background: $lite-background;
+    background: var(#{--components-background-dark});
 
 
 }
@@ -45,7 +45,7 @@
 
     .this__time,
     .this__city {
-        color: $lite-color;
+        color: $light-color;
         font-weight: 400;
         font-size: 25px;
         line-height: 30px;
