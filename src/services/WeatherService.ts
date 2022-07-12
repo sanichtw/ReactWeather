@@ -1,7 +1,11 @@
-import axios, { AxiosResponse } from "axios"
+import axios, { AxiosResponse } from "axios";
+import api from "../axios";
+import { Weather } from "../store/types/types";
 
 export class WeatherService {
-    static getCurrentWeather(city: string): Promise<AxiosResponse<any>> {
-        return axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=30478f2fc3b0a656028f504891676714`)
-    }
+  static getCurrentWeather(city: string): Promise<AxiosResponse<Weather>> {
+    return api.get<Weather>(
+      `/weather?q=${city}`
+    );
+  }
 }
