@@ -15,8 +15,8 @@ export const Tabs = () => {
   return (
     <div className={s.tabs}>
       <div className={s.tabs__left}>
-        {tabs.map(({ value }) => (
-          <div className={s.tab__value + ' ' + s.active}>{value}</div>
+        {tabs.map(({ value }, idx) => (
+          <div key={idx} className={s.tab__value + ' ' + s.active}>{value}</div>
         ))}
       </div>
       <div className={s.cancel}>Отменить</div>

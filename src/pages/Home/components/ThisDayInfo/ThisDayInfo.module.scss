@@ -6,7 +6,7 @@
   width: 100%;
   box-shadow: $box-shadow;
   border-radius: $border-radius;
-  background: $light-background;
+  background: var(#{--components-background-default});
   position: relative;
   margin-left: 50px;
   position: relative;
@@ -36,14 +36,25 @@
     margin-right: 25px;
   }
 
-  .indicator {
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
-    border-radius: 50%;
+  
+}
+
+
+.indicator {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+  border-radius: 50%;
+
+  &__name {
+    color: $base-color;
+  }
+
+  &__value {
+    color: var(#{--text-color-default});
   }
 }

@@ -6,7 +6,7 @@
     width: 100%;
     box-shadow: $box-shadow;
     border-radius: 20px;
-    background: var(#{--components-background-dark});
+    background: var(#{--components-background-default});
 
 
 }
@@ -23,18 +23,18 @@
         height: 119px;
     }
 
-    
+
 }
 
 .top__block_info {
     .this__temp {
-        color: $blue;
+        color: #4793FF;
         font-size: 96px;
         font-weight: 500;
     }
 
     .this__day_name {
-        color: primary-color;
+        color: var(#{--text-color-default});
         font-weight: 400;
         font-size: 40px;
     }
@@ -45,7 +45,7 @@
 
     .this__time,
     .this__city {
-        color: $light-color;
+        color: $base-color;
         font-weight: 400;
         font-size: 25px;
         line-height: 30px;

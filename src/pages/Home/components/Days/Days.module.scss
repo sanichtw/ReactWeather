@@ -9,27 +9,27 @@
   padding: 20px;
   box-shadow: $box-shadow;
   border-radius: 0 0 20px;
-  background-color: $light-background;
+  background-color: var(#{--components-background-default});
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: $blue-background;
+  background-color: var(#{--card-background-default});
   border-radius: 10px;
   padding: 10px;
   width: 149px;
   cursor: pointer;
 
   .day {
-    color: $primary-color;
+    color: var(#{--text-color-default});
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 7px;
   }
 
   .date {
-    color: $light-color;
+    color: $base-color;
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
@@ -44,18 +44,18 @@
   .temp__day {
     font-weight: 500;
     font-size: 18px;
-    color: $primary-color;
+    color: var(#{--text-color-default});
   }
 
   .temp__night {
     font-size: 13px;
-    color: $light-color;
+    color: $base-color;
     margin-bottom: 6px;
   }
 
   .info {
     font-size: 13px;
-    color: $light-color;
+    color: $base-color;
   }
 }
 
@@ -80,13 +80,13 @@
 .tab__value {
   font-weight: 400;
   font-size: 18px;
-  color: #000;
+  color: var(#{--text-color-default});
   padding: 7px 20px 9px 21px;
   margin-right: 15px;
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 5px;
   cursor: pointer;
-  background-color: $light-background;
+  background-color: var(#{--components-background-default});
 }
 
 .cancel {
@@ -94,9 +94,9 @@
   border-radius: 5px;
   font-weight: 400;
   font-size: 18px;
-  color: #000;
+  color: var(#{--text-color-default});
   padding: 7px 20px 9px 21px;
   cursor: pointer;
-  background-color: $light-background;
+  background-color: var(#{--components-background-default});
 
 }

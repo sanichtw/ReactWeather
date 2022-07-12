@@ -37,7 +37,7 @@ const ThisDayInfo = (props: Props) => {
 
   return (
     <div className={s.this__day_info}>
-      {items.map((item: Item) => <ThisDayInfoItem item={item} />)}
+      {items.map((item: Item) => <ThisDayInfoItem item={item} key={item.icon_id} />)}
       <img src={cloud} alt="cloud" />
     </div>
   )

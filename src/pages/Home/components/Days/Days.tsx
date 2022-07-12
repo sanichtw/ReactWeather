@@ -73,7 +73,7 @@ const Days = (props: Props) => {
     },
   ];
 
-  const daysCards = days.map((dayInfo: Day) => <Card dayInfo={dayInfo} />);
+  const daysCards = days.map((dayInfo: Day) => <Card dayInfo={dayInfo} key={dayInfo.day} />);
 
   return (
     <div className={s.days}>
